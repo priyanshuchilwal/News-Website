@@ -1,0 +1,161 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 360px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 0 4px #d23b3b;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.nav-links ul {
+  gap: 20px;
+}
+
+.hover-link {
+  cursor: pointer;
+}
+
+.hover-link:hover {
+  color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+  color: rgb(7, 183, 168);
+}
+
+.nav-item {
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+
+.nav-item.active {
+  background-color: #1fb6c4;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+
+.nav-item:hover {
+  background-color: #1fb6c4;
+  color: rgb(255, 255, 255);
+}
+
+.search-bar {
+  height: 35px;
+  gap: 8px;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #f3f9fd;
+  color: rgb(26, 22, 22);
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+  background-color: #1fb6c4d0;
+  color: rgb(255, 255, 255);
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 80px;
+  background-color: #eaeaea;
+}
+
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 4px #ffd4d4;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #eaeaea;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+  height: 250px;
+}
+
+.news-source {
+  margin-block: 12px;
+}
+
+.company-logo img {
+  margin: 20px;
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-text {
+  padding: 6px;
+  border-radius: 5px;
+  border-color: #f9fdff;
+}
